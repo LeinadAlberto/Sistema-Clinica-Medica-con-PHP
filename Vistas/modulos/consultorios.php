@@ -1,5 +1,6 @@
 <?php 
 
+    /* Valida que solo entre a esta vista los que tienen rol Secretaria */
     if ($_SESSION["rol"] != "Secretaria") {
 
         echo '<script>
@@ -33,7 +34,6 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">Crear Consultorio</button>
-
 
                 </form>
 

@@ -42,7 +42,7 @@
 
                 $pdo->execute();
 
-                return $pdo->fetchAll();
+                return $pdo->fetch();
 
             }
 
@@ -66,6 +66,7 @@
         }
 
         // Editar Consultorio
+        // Obtiene los datos de un consultorio para renderizarlos en el formulario donde se editara
 
         static public function EditarConsultoriosM($tablaBD, $id) {
             
