@@ -56,7 +56,7 @@
 
                 $url = explode("/", $_GET["url"]);
 
-                if ($url[0] == "inicio" || $url[0] == "salir" || $url[0] == "perfil-Secretaria" || $url[0] == "perfil-S" || $url[0] == "consultorios" || $url[0] == "E-C") {
+                if ($url[0] == "inicio" || $url[0] == "salir" || $url[0] == "perfil-Secretaria" || $url[0] == "perfil-S" || $url[0] == "consultorios" || $url[0] == "E-C" || $url[0] == "doctores") {
 
                     include "modulos/" . $url[0] . ".php";
 
@@ -93,6 +93,10 @@
         <script src="http://localhost/clinica/Vistas/dist/js/adminlte.min.js"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="http://localhost/clinica/Vistas/dist/js/demo.js"></script>
+
+        <!-- Archivos JS de los Modulos -->
+        <script src="http://localhost/clinica/Vistas/js/doctores.js"></script>
+
         <script>
         $(document).ready(function () {
             $('.sidebar-menu').tree()
